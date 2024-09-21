@@ -1,3 +1,51 @@
+/* MUSIC ELEMENT */
+/* The button is positioned using flexbox and margin */
+#playButton {
+  position: absolute;
+  z-index: 1;
+  /* Override flexbox alignment by using absolute positioning */
+  /* top: 1 .67vh;
+  /* One third from the top of the screen */
+  left: 50%;
+  top: 10%;
+  /* Center horizontally based on the viewport width */
+  transform: translateX(-50%);
+  /* Adjust to perfectly center the button */
+
+  padding: 15px 30px;
+  background-color: #FF69B4;
+  /* Pink background */
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  /* Rounded corners */
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+/* Hover and click effects */
+#playButton:hover {
+  background-color: #FF1493;
+  /* Darker pink on hover */
+  transform: scale(1.05);
+  /* Slightly enlarge the button */
+}
+
+#playButton:active {
+  background-color: #C71585;
+  /* Even darker pink on click */
+  transform: scale(1);
+  /* Return to original size */
+}
+
+/* When the button is disabled */
+#playButton:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
 *,
 *::after,
 *::before {
